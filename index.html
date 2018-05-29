@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.content {
+			display: none;
+
+		}
+		ul{
+			background-color: #efefef;
+			padding: 20px;	
+		}
+		li{
+			display: inline-block;
+			list-style: none;
+			padding-right: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	
+<ul>
+	<li class="item" data-item = "1" onclick="showContent('cars');"><a href="#">Cars</a></li>
+	<li class="item" data-item = "2" onclick="showContent('bikes');"><a href="#">Bikes</a></li>
+	<li class="item" data-item = "3" onclick="showContent('boats');"><a href="#">Boats</a></li>
+</ul>
+
+<div id="cars" class="content" data-item = "1" >
+	<img src="images/cars.jpg">
+</div>
+<div id="bikes" class="content" data-item = "2">
+	<img src="images/bikes.jpg">
+</div>
+<div id="boats" class="content" data-item = "3">
+	<img src="images/boats.jpg">
+</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
